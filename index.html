@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To-Do List</title>
+
+    <!-- Connecting CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Application Container -->
+    <div class="todo-container">
+
+        <!-- Application Heading -->
+        <header class="todo-header">
+            <h1>My To Do Tasks</h1>
+            <p>Stay organized. Get things done.</p>
+        </header>
+
+        <!-- Task Input Section -->
+        <section class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+                autocomplete="off"
+            >
+
+            <button id="addTaskBtn">
+                + Add Task
+            </button>
+
+        </section>
+
+        <!-- Task Statistics -->
+        <section class="task-stats">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+        <!-- Task Filter Section -->
+        <section class="task-filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="pending">
+                Pending
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </section>
+
+        <!-- Task List Section -->
+        <section class="task-list-section">
+
+            <h2>Your Tasks</h2>
+
+            <ul id="taskList">
+                <!-- JavaScript will display tasks here -->
+            </ul>
+
+        </section>
+
+    </div>
+
+    <!-- Connecting JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

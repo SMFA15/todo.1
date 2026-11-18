@@ -1,0 +1,262 @@
+```css
+/* =====================================
+   1. UNIVERSAL RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   2. BODY STYLING
+===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =====================================
+   3. MAIN APPLICATION CONTAINER
+===================================== */
+
+.todo-container {
+    width: 100%;
+    max-width: 650px;
+
+    background-color: #1e293b;
+
+    padding: 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =====================================
+   4. HEADER STYLING
+===================================== */
+
+.todo-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.todo-header h1 {
+    font-size: 32px;
+    color: #a78bfa;
+    margin-bottom: 8px;
+}
+
+.todo-header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   5. TASK INPUT SECTION
+===================================== */
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.task-input input {
+    flex: 1;
+
+    padding: 14px;
+
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    color: #f8fafc;
+    font-size: 15px;
+
+    outline: none;
+}
+
+.task-input input::placeholder {
+    color: #64748b;
+}
+
+.task-input input:focus {
+    border-color: #8b5cf6;
+}
+
+
+/* ADD TASK BUTTON */
+
+.task-input button {
+    padding: 14px 20px;
+
+    background-color: #7c3aed;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-input button:hover {
+    background-color: #6d28d9;
+}
+
+
+/* =====================================
+   6. TASK STATISTICS SECTION
+===================================== */
+
+.task-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    flex: 1;
+
+    background-color: #0f172a;
+
+    padding: 18px;
+    border-radius: 10px;
+
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+.stat-card h3 {
+    font-size: 25px;
+    color: #a78bfa;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+
+/* =====================================
+   7. TASK FILTER SECTION
+===================================== */
+
+.task-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 9px 18px;
+
+    background-color: #0f172a;
+    color: #94a3b8;
+
+    border: 1px solid #334155;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #334155;
+    color: white;
+}
+
+
+/* ACTIVE FILTER BUTTON */
+
+.filter-btn.active {
+    background-color: #7c3aed;
+    color: white;
+    border-color: #7c3aed;
+}
+
+
+/* =====================================
+   8. TASK LIST SECTION
+===================================== */
+
+.task-list-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    background-color: #0f172a;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    color: #e2e8f0;
+}
+
+
+/* =====================================
+   9. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 500px) {
+
+    .todo-container {
+        padding: 20px;
+    }
+
+    .task-input {
+        flex-direction: column;
+    }
+
+    .task-stats {
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 12px 5px;
+    }
+
+    .stat-card h3 {
+        font-size: 20px;
+    }
+
+    .stat-card p {
+        font-size: 10px;
+    }
+
+    .filter-btn {
+        flex: 1;
+        padding: 9px 5px;
+        font-size: 12px;
+    }
+}
+```
